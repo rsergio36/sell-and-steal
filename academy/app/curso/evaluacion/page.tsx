@@ -1,0 +1,8 @@
+const questions=[
+"Explica con tus palabras qué tarea delegarías primero a una IA y por qué.",
+"Escribe un prompt completo para organizar un día con cinco tareas.",
+"¿Qué información debes revisar personalmente aunque una IA haya producido una respuesta?",
+"Describe una tarea repetitiva de tu semana y cómo la convertirías en un proceso asistido por IA.",
+"Define una métrica concreta para saber si tu sistema de IA realmente te está ahorrando tiempo."
+];
+export default function Evaluacion(){return <main><header><a href="/"><strong>ORVUX ACADEMY</strong></a><span>Evaluación</span></header><section className="hero compact"><p className="eyebrow">EVALUACIÓN FINAL</p><h1>Demuestra que puedes delegar.</h1><p className="lead">Responde las preguntas y presenta un pequeño caso práctico. La certificación ORVUX Academy requiere completar esta etapa.</p></section><section className="content"><div className="assessment"><h2>Parte 1 · Aplicación</h2>{questions.map((q,i)=><label key={q}><b>{i+1}. {q}</b><textarea rows={4} placeholder="Escribe tu respuesta aquí..." /></label>)}<h2>Parte 2 · Proyecto final</h2><p>Elige una tarea real de tu vida o trabajo. Describe el antes, el prompt o sistema que utilizaste, el resultado y cuánto tiempo estimas que ahorraste.</p><textarea rows={8} placeholder="Tu proyecto final..." /><button className="cta" type="button">Enviar evaluación</button><p className="note">En esta versión MVP el formulario es visual: todavía no guarda respuestas en una base de datos ni emite certificados automáticamente.</p></div></section><footer>© 2026 ORVUX Academy</footer></main>}
